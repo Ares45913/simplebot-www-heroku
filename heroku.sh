@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir web
+python3 -m http.serve -d web & 
 
 # configure the bot
 python3 -m simplebot init "$ADDR" "$PASSWORD"
